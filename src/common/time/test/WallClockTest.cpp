@@ -11,7 +11,7 @@
 using nebula::time::WallClock;
 
 TEST(WallClock, TimePointInSeconds) {
-    for (int i = 0; i < 100; i++) {
+    for (int i = 0; i < 1000; i++) {
         auto tp1 = WallClock::slowNowInSec();
         auto tp2 = WallClock::fastNowInSec();
         auto tp3 = WallClock::slowNowInSec();
